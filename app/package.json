@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A cli application",
+  "private": true,
+  "license": "MIT",
+  "author": "Chirag Jain <jain.chirag0174@gmail.com> (https://www.coderchirag.tech)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --sourcemap --outfile=dist/index.js --platform=node --packages=external --minify",
+    "dev": "esbuild src/index.ts --bundle --sourcemap --outfile=dist/index.js --platform=node --packages=external --minify --watch=forever"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.2",
+    "@typescript/config": "*",
+    "esbuild": "^0.19.8",
+    "typescript": "^4.9.1"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "terminal-kit": "^3.0.1"
+  }
+}

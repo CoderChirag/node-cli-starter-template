@@ -1,0 +1,5 @@
+$ esbuild src/index.ts --bundle --sourcemap --outfile=dist/index.js --platform=node --packages=external --minify
+
+  dist/index.js      705b 
+  dist/index.js.map  768b 
+

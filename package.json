@@ -1,0 +1,26 @@
+{
+  "name": "node-cli",
+  "version": "1.0.0",
+  "description": "A starter template for cli application",
+  "main": "index.js",
+  "bin": "index.js",
+  "author": "Chirag Jain <jain.chirag0174@gmail.com> (https://www.coderchirag.tech)",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "yarn@1.22.19",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev"
+  },
+  "workspaces": [
+    "app",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@typescript/config": "*",
+    "turbo": "^1.10.16"
+  },
+  "dependencies": {
+    "app": "*"
+  }
+}

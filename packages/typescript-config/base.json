@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "lib": ["es2022"],
+    "module": "CommonJS",
+    "moduleDetection": "force",
+    "moduleResolution": "Node",
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "outDir": "dist",
+    "noImplicitReturns": true,
+    "importsNotUsedAsValues": "error",
+    "ignoreDeprecations": "5.0"
+  }
+}
